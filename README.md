@@ -14,9 +14,9 @@ Criar uma interface interativa onde o usuário possa visualizar dinamicamente as
 
 ## 🌐 Visualização
 
-O projeto está disponível para visualização através da plataforma [Vercel](https://cartao-interativo-six.vercel.app/). Acesse o projeto clicando no link abaixo:
+O projeto está disponível para visualização através da plataforma [Vercel](https://vercel.com/). Acesse o projeto clicando no link abaixo:
 
-[🔗 Link para o Projeto na Vercel](#)
+[🔗 Link para o Projeto na Vercel](https://cartao-interativo-six.vercel.app/)
 
 ## 📂 Estrutura do Projeto
 
