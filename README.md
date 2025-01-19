@@ -35,7 +35,8 @@ O projeto está disponível para visualização através da plataforma [Vercel](
 
 ## 📸 Prévia do Projeto
 
-Adicione aqui uma imagem ou gif demonstrando a funcionalidade principal do projeto.
+<img src="https://github.com/user-attachments/assets/a4727817-d4c6-4380-88e7-c04a8405eac4" alt="Imagem Frente Cartao" width="600">
+<img src="https://github.com/user-attachments/assets/946c1563-ef3f-4a9a-a5f0-ed8d24ebdd65" alt="Imagem Verso Cartao" width="600">
 
 ## 🛠️ Como Executar o Projeto Localmente
 
