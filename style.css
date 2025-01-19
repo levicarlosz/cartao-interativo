@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+:root {
+  --font: "Roboto Flex";
+
+  --stroke-light-theme: #11111140;
+  --blue-400: rgb(70, 142, 236);
+
+  --white-000: #fff;
+
+  --background-color: #f4f4f4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font), sans-serif;
+  background-color: var(--background-color);
+}
+
+section {
+  width: 500px;
+  height: 100vh;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.cartaoCredito {
+  width: 400px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  background-color: var(--blue-400);
+
+  color: var(--white-000);
+
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+  /* Efeito 3D */
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+  transition: transform 0.6s;
+}
+
+.cartaoCredito .dataCartao span {
+  display: flex;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+form input,
+select {
+  height: 2.75rem;
+  padding: 0 0.5rem;
+  border: 1px solid var(--stroke-light-theme);
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  transition: outline 0.1s ease-in;
+}
+form input:focus,
+select:focus {
+  outline: 2px solid var(--blue-400);
+}
+
+button {
+  background: var(--blue-400);
+  text-transform: capitalize;
+  font-weight: 600;
+  color: white;
+  border: none;
+  height: 3rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  transition: filter 0.15s ease-in;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  filter: brightness(1.1);
+}
+
+.labels {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.labels label:last-child {
+  width: 11.5rem;
+}
+.validade {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#nomeCartao {
+  background: var(--white-000) url("./assets/user.svg") no-repeat 0.5rem center;
+  padding-left: 2.25rem;
+  background-size: 1.5rem;
+}
+
+#numeroCartao {
+  background: var(--white-000) url("./assets/credit-card.svg") no-repeat 0.5rem
+    center;
+  padding-left: 2.5rem;
+  background-size: 1.5rem;
+}
+
+/* Frente e verso */
+.cartaoCredito .front, .cartaoCredito .back {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  backface-visibility: hidden;
+  padding: 2rem;
+}
+
+
+.cartaoCredito .back {
+  transform: rotateY(180deg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cvvTexto{
+width: 100%;
+  display: flex;
+  background-color: var(--white-000);
+  align-items: center;
+  justify-content: end;
+  color: black;
+  padding: 0.25rem 0.75rem;
+
+  position: relative;
+  top: -4rem;
+  left: 0rem;
+
+}
+
+/* Efeito flip ao adicionar a classe */
+.cartaoCredito.flipped {
+  transform: rotateY(180deg);
+}
+
+.strip {
+  background: black;
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: -6rem;
+  left: 0rem;
+}
+
+.chip {
+  width: 3.5rem;
+  height: 2.5rem;
+  background-color: rgb(247, 226, 110);
+  border: 0.5rem solid  rgb(228, 208, 99);
+  position: fixed;
+  top: 4.5rem;
+  border-radius: 0.5rem;
+}
