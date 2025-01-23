@@ -3,12 +3,12 @@
 :root {
   --font: "Roboto Flex";
 
+  --background-color: #f4f4f4;
   --stroke-light-theme: #11111140;
+  
   --blue-400: rgb(70, 142, 236);
-
   --white-000: #fff;
 
-  --background-color: #f4f4f4;
 }
 
 * {
@@ -187,4 +187,10 @@ width: 100%;
   position: fixed;
   top: 4.5rem;
   border-radius: 0.5rem;
+}
+
+#link-github {
+  color: var(--font);
+  font-weight: 600;
+  text-decoration: underline;
 }
